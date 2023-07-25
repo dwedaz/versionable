@@ -1,0 +1,45 @@
+{
+    "name": "dwedaz/versionable",
+    "description": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Willy Yudithya",
+            "email": "neo.dwedaz@gmail.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/dwedaz/versionable",
+    "keywords": [
+        "Laravel", "Backpack", "Backpack for Laravel", "Backpack Addon", "Versionable"
+    ],
+    "require": {
+        "illuminate/support": "~8|~9",
+        "backpack/crud": "^5.4",
+        "mpociot/versionable": "^4.40"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dwedaz\\Versionable\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dwedaz\\Versionable\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --testdox"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dwedaz\\Versionable\\AddonServiceProvider"
+            ]
+        }
+    }
+}
