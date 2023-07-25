@@ -11,4 +11,8 @@ class AddonServiceProvider extends ServiceProvider
     protected $vendorName = 'dwedaz';
     protected $packageName = 'versionable';
     protected $commands = [];
+   
+    public function boot(){
+        dd('weda');
+    }
 }
